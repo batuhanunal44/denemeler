@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+
+    <table style="width:100%">
+        <tr>
+            <th>PlaceHolder</th>
+            <th>Value</th>
+        </tr>
+        {%for i in liste %}
+        <tr>
+            <td>{{i}}</td>
+            <td>{{liste[i]["value"]}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+
+
+
+</body>
+
+</html>
